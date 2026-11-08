@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopSphere | Everything you love, in one place</title><link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">S</span> ShopSphere</a>
+<nav><a href="#home">Home</a><a href="#electronics">Electronics</a><a href="#fashion">Fashion</a></nav>
+<button class="cart-button" id="cart-toggle">🛒 Cart <span id="cart-count">0</span></button></header>
+<main>
+<section class="hero" id="home"><div class="hero-copy"><span class="eyebrow">THE EVERYDAY MARKETPLACE</span>
+<h1>Find your next<br><em>favourite thing.</em></h1><p>Fresh tech, timeless style and little things that make every day better.</p>
+<a class="primary-button" href="#products">Explore products <span>→</span></a></div>
+<div class="hero-art"><div class="hero-circle"></div><img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=900&q=85" alt="Featured sneakers">
+<div class="floating-tag">New season<br><strong>New favourites</strong></div></div></section>
+<section class="benefits"><div><span>🚚</span><p><strong>Free delivery</strong><small>On orders over ₹999</small></p></div>
+<div><span>↩️</span><p><strong>Easy returns</strong><small>Hassle-free 7-day returns</small></p></div>
+<div><span>🔒</span><p><strong>Secure checkout</strong><small>Your details stay protected</small></p></div></section>
+<section class="section" id="products"><div class="section-heading"><div><span class="eyebrow">CURATED FOR YOU</span><h2>Shop the collection</h2></div>
+<div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="electronics">Electronics</button><button class="filter" data-filter="fashion">Fashion</button></div></div>
+<div class="product-grid" id="product-grid">
+<article class="product-card" data-category="electronics" data-name="Wireless Headphones" data-price="2499"><div class="product-image lavender"><span class="product-label">BESTSELLER</span><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85" alt="Wireless headphones"></div><div class="product-info"><span class="category">ELECTRONICS</span><h3>Wireless Headphones</h3><div class="product-bottom"><strong>₹2,499</strong><button class="add-button">＋ Add</button></div></div></article>
+<article class="product-card" data-category="electronics" data-name="Everyday Smart Watch" data-price="3999"><div class="product-image peach"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85" alt="Smart watch"></div><div class="product-info"><span class="category">ELECTRONICS</span><h3>Everyday Smart Watch</h3><div class="product-bottom"><strong>₹3,999</strong><button class="add-button">＋ Add</button></div></div></article>
+<article class="product-card" data-category="fashion" data-name="Classic Sneakers" data-price="2199"><div class="product-image mint"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85" alt="Sneakers"></div><div class="product-info"><span class="category">FASHION</span><h3>Classic Sneakers</h3><div class="product-bottom"><strong>₹2,199</strong><button class="add-button">＋ Add</button></div></div></article>
+<article class="product-card" data-category="fashion" data-name="Everyday Denim Jacket" data-price="2799"><div class="product-image blue"><img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=700&q=85" alt="Denim jacket"></div><div class="product-info"><span class="category">FASHION</span><h3>Everyday Denim Jacket</h3><div class="product-bottom"><strong>₹2,799</strong><button class="add-button">＋ Add</button></div></div></article>
+<article class="product-card" data-category="electronics" data-name="Portable Speaker" data-price="1799"><div class="product-image peach"><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=85" alt="Portable speaker"></div><div class="product-info"><span class="category">ELECTRONICS</span><h3>Portable Speaker</h3><div class="product-bottom"><strong>₹1,799</strong><button class="add-button">＋ Add</button></div></div></article>
+<article class="product-card" data-category="fashion" data-name="Minimal Backpack" data-price="1499"><div class="product-image lavender"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=85" alt="Backpack"></div><div class="product-info"><span class="category">FASHION</span><h3>Minimal Backpack</h3><div class="product-bottom"><strong>₹1,499</strong><button class="add-button">＋ Add</button></div></div></article>
+</div></section>
+<section class="promo" id="electronics"><div><span class="eyebrow">A LITTLE UPGRADE</span><h2>Good things.<br>Great prices.</h2><p>Discover useful everyday essentials picked for you.</p></div><a href="#products" class="light-button">Shop now →</a></section>
+</main>
+<aside class="cart-panel" id="cart-panel" aria-label="Shopping cart"><div class="cart-header"><h2>Your cart</h2><button id="cart-close" aria-label="Close cart">✕</button></div>
+<div id="cart-items" class="cart-items"><p class="empty-cart">Your cart is waiting for something good.</p></div>
+<div class="cart-footer"><div><span>Subtotal</span><strong id="cart-total">₹0</strong></div><button class="primary-button checkout" id="checkout">Continue to checkout</button><small>Demo project – no real payment is collected.</small></div></aside>
+<div class="overlay" id="overlay"></div>
+<footer><a class="brand" href="#"><span class="brand-mark">S</span> ShopSphere</a><p>Good finds for everyday life.</p><small>© 2026 ShopSphere Demo Store</small></footer>
+<script th:src="@{/js/app.js}"></script></body></html>
