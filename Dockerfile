@@ -5,3 +5,4 @@ COPY target/shopsphere.jar app.jar
 USER appuser
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+h
